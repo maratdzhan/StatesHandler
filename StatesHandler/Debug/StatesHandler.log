@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\stu1\source\repos\StatesHandler\StatesHandler\description.h(21,32): warning C4018:  <: несоответствие типов со знаком и без знака
+  StatesHandler.vcxproj -> C:\Users\stu1\source\repos\StatesHandler\Debug\StatesHandler.exe
