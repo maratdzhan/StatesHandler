@@ -140,9 +140,10 @@ void StatesHandler::Store()
 
 	ofstream ofs("coords.pvm");
 	ofs << "CARTESIAN\nSHIFT\n";
+	int cntr = 0;
 	for (const auto& file : handling)
 	{
-		cout << file<<" ";
+		cout << ++cntr << " " << file << " ";
 		ifstream ifs(file);
 		if (!ifs.is_open()) { cout << " false..\n"; break; }
 		string temp;
@@ -170,6 +171,7 @@ void StatesHandler::Merge()
 	try {
 		idx1 = stoi(v1)-1;
 		idx2 = stoi(v2)-1;
+		if (idx1>=0 && idx2>=0)
 		Merging(idx1, idx2);
 	}
 	catch (exception& mex)

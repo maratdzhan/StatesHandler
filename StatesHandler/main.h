@@ -81,7 +81,7 @@ void StatesHandler::PrintAvailableStates() const
 	int cntr = 1;
 	printf("Available states: ");
 	for (const auto& state : states) {
-		cout << state.first;
+		cout << state.first << ", ";
 		if (cntr++ % 10 == 0) cout << endl;
 	}
 	printf("\n");
